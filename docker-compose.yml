@@ -2,5 +2,7 @@ version: '3'
 services:
   rstudio:
     image: tokyor/rstudio
+    volumes:
+      - ".:/home/rstudio/kitematic"
     ports:
       - "8787:8787"
